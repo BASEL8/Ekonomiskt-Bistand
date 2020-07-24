@@ -64,7 +64,7 @@ const FromInput = ({
   )
   return (<>
     {(section === 'familyStatus' && type !== 'radio') && <p style={{ marginTop: 40 }}>{name}  {(defaultValue) ? ' = ' + defaultValue : null}</p>}
-    {false ?
+    {true ?
       <MySlider
         valueLabelDisplay="off"
         defaultValue={parseInt(defaultValue)}
